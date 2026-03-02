@@ -1,0 +1,121 @@
+{
+  "best_model": "Naive Bayes",
+  "feature_cols": [
+    "Age",
+    "Gender_Encoded",
+    "Family_Income",
+    "Internet_Access_Encoded",
+    "Study_Hours_per_Day",
+    "Attendance_Rate",
+    "Assignment_Delay_Days",
+    "Travel_Time_Minutes",
+    "Part_Time_Job_Encoded",
+    "Scholarship_Encoded",
+    "Stress_Index",
+    "GPA",
+    "Semester_GPA",
+    "CGPA",
+    "Semester_Encoded",
+    "Department_Encoded",
+    "Parental_Education_Encoded",
+    "GPA_Attendance",
+    "Stress_Job",
+    "Income_Scholarship",
+    "Study_Attendance",
+    "High_Stress",
+    "Low_Attendance",
+    "Low_GPA",
+    "Long_Commute"
+  ],
+  "dataset_summary": {
+    "total_records": 10000,
+    "features": 25,
+    "class_0": 7646,
+    "class_1": 2354,
+    "class_0_pct": 76.5,
+    "class_1_pct": 23.5
+  },
+  "all_results": [
+    {
+      "Model": "KNN (k=9)",
+      "Accuracy": 0.791,
+      "Precision": 0.5923,
+      "Recall": 0.3609,
+      "F1 Score": 0.4485,
+      "ROC-AUC": 0.7714,
+      "CV F1 Mean": 0.4333,
+      "CV F1 Std": "\u00b10.0253"
+    },
+    {
+      "Model": "Decision Tree",
+      "Accuracy": 0.698,
+      "Precision": 0.4126,
+      "Recall": 0.6667,
+      "F1 Score": 0.5097,
+      "ROC-AUC": 0.7172,
+      "CV F1 Mean": 0.5053,
+      "CV F1 Std": "\u00b10.0161"
+    },
+    {
+      "Model": "Naive Bayes",
+      "Accuracy": 0.75,
+      "Precision": 0.4799,
+      "Recall": 0.7367,
+      "F1 Score": 0.5812,
+      "ROC-AUC": 0.8122,
+      "CV F1 Mean": 0.5752,
+      "CV F1 Std": "\u00b10.0112"
+    },
+    {
+      "Model": "Random Forest",
+      "Accuracy": 0.7835,
+      "Precision": 0.5413,
+      "Recall": 0.5287,
+      "F1 Score": 0.5349,
+      "ROC-AUC": 0.8041,
+      "CV F1 Mean": 0.5412,
+      "CV F1 Std": "\u00b10.0106"
+    },
+    {
+      "Model": "Logistic Regression",
+      "Accuracy": 0.7385,
+      "Precision": 0.4665,
+      "Recall": 0.7686,
+      "F1 Score": 0.5806,
+      "ROC-AUC": 0.8199,
+      "CV F1 Mean": 0.576,
+      "CV F1 Std": "\u00b10.0108"
+    }
+  ],
+  "knn_best_k": 9,
+  "knn_search": [
+    {
+      "k": 1,
+      "f1": 0.4192
+    },
+    {
+      "k": 3,
+      "f1": 0.4044
+    },
+    {
+      "k": 5,
+      "f1": 0.4485
+    },
+    {
+      "k": 7,
+      "f1": 0.4256
+    },
+    {
+      "k": 9,
+      "f1": 0.4495
+    },
+    {
+      "k": 11,
+      "f1": 0.4245
+    },
+    {
+      "k": 15,
+      "f1": 0.4147
+    }
+  ]
+}
